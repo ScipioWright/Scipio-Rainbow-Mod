@@ -13,17 +13,22 @@ local function choose_randoms_from_list(list)
 	return result1, result2, result3
 end
 
+local function get_arm()
+	return EntityGetWithTag("player_arm_r")[1]
+end
+
 function OnWorldPostUpdate()
 	-- if you just pressed the left mouse button
 	if InputIsMouseButtonJustDown(1) then
 		local player_id = get_player()
+		local arm_id = get_arm()
 		-- the components are labelled with tags, see player_base.xml
 		local red_comp = EntityGetFirstComponent(player_id, "SpriteComponent", "player_red")
 		local green_comp = EntityGetFirstComponent(player_id, "SpriteComponent", "player_green")
 		local blue_comp = EntityGetFirstComponent(player_id, "SpriteComponent", "player_blue")
-		local red_arm_comp = EntityGetFirstComponent(player_id, "SpriteComponent", "player_arm_red")
-		local green_arm_comp = EntityGetFirstComponent(player_id, "SpriteComponent", "player_arm_green")
-		local blue_arm_comp = EntityGetFirstComponent(player_id, "SpriteComponent", "player_arm_blue")
+		local red_arm_comp = EntityGetFirstComponent(arm_id, "SpriteComponent", "arm_red")
+		local green_arm_comp = EntityGetFirstComponent(arm_id, "SpriteComponent", "arm_green")
+		local blue_arm_comp = EntityGetFirstComponent(arm_id, "SpriteComponent", "arm_blue")
 		local r1 = rand(0, 1)
 		local r2 = rand(0, 1 - r1)
 		local r3 = 1 - r1 - r2
