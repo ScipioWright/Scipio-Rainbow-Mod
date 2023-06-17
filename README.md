@@ -1,7 +1,7 @@
 # scipio-rainbow-mod
 Mod for a rainbow player sprite.
 
-Inspired by BelManedGoat's LTTP sprite modding.1
+Inspired by BelManedGoat's LTTP sprite mods.
 
 # Installation Instructions
 

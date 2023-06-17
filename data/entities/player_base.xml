@@ -197,17 +197,27 @@
   </SpriteAnimatorComponent>
 
     <SpriteComponent
-            _tags="character,lukki_disable,player_red"
+            _tags="character,player_red"
             alpha=".25"
             image_file="data/scipio-rainbow/player_red.xml"
             next_rect_animation=""
             offset_x="6"
             offset_y="14"
             rect_animation="walk"
-            z_index="0.61"
+            z_index="0.6"
     />
     <SpriteComponent
-            _tags="character,lukki_disable,player_blue"
+            _tags="character,player_green"
+            alpha=".25"
+            image_file="data/scipio-rainbow/player_green.xml"
+            next_rect_animation=""
+            offset_x="6"
+            offset_y="14"
+            rect_animation="walk"
+            z_index="0.6"
+    />
+    <SpriteComponent
+            _tags="character,player_blue"
             alpha=".25"
             image_file="data/scipio-rainbow/player_blue.xml"
             next_rect_animation=""
@@ -217,65 +227,79 @@
             z_index="0.6"
     />
     <SpriteComponent
-            _tags="character,lukki_disable,player_green"
-            alpha=".25"
-            image_file="data/scipio-rainbow/player_green.xml"
-            next_rect_animation=""
-            offset_x="6"
-            offset_y="14"
-            rect_animation="walk"
-            z_index="0.62"
-    />
-    <SpriteComponent
-            _tags="character,lukki_disable"
+            _tags="character"
             alpha="1"
             image_file="data/scipio-rainbow/player_white.xml"
             next_rect_animation=""
             offset_x="6"
             offset_y="14"
             rect_animation="walk"
-            z_index="0.63"
+            z_index="0.61"
     />
 
-  <SpriteComponent 
-    _tags="character,lukki_enable"
-	_enabled="0"
-    alpha="1" 
-    image_file="data/enemies_gfx/player_lukky.xml" 
-    next_rect_animation="" 
-    offset_x="6" 
-    offset_y="14" 
-    rect_animation="walk" 
-    z_index="0.6"
-  ></SpriteComponent>
+<!--    <SpriteComponent-->
+<!--        _tags="character,lukki_enable"-->
+<!--        _enabled="0"-->
+<!--        alpha="1"-->
+<!--        image_file="data/enemies_gfx/player_lukky.xml"-->
+<!--        next_rect_animation=""-->
+<!--        offset_x="6"-->
+<!--        offset_y="14"-->
+<!--        rect_animation="walk"-->
+<!--        z_index="0.6"-->
+<!--    />-->
 
-  <HotspotComponent
-    _tags="right_arm_root"
-    sprite_hotspot_name="right_arm_start"
-    transform_with_scale="1"
-  ></HotspotComponent>
+    <HotspotComponent
+        _tags="right_arm_root"
+        sprite_hotspot_name="right_arm_start"
+        transform_with_scale="1"
+    />
 
   <Entity name="arm_r" tags="player_arm_r">
 
-    <SpriteComponent 
-      _tags="with_item" 
-      alpha="1" 
-      image_file="data/enemies_gfx/player_arm.xml" 
-      next_rect_animation="" 
-      rect_animation="default" 
-      z_index="0.59"
-    ></SpriteComponent>
+    <SpriteComponent
+        _tags="with_item,arm_red"
+        alpha=".25"
+        image_file="data/scipio-rainbow/player_arm_red.xml"
+        next_rect_animation=""
+        rect_animation="default"
+        z_index="0.58"
+    />
+    <SpriteComponent
+        _tags="with_item,arm_green"
+        alpha=".25"
+        image_file="data/scipio-rainbow/player_arm_green.xml"
+        next_rect_animation=""
+        rect_animation="default"
+        z_index="0.58"
+    />
+    <SpriteComponent
+        _tags="with_item,arm_blue"
+        alpha=".25"
+        image_file="data/scipio-rainbow/player_arm_blue.xml"
+        next_rect_animation=""
+        rect_animation="default"
+        z_index="0.58"
+    />
+    <SpriteComponent
+        _tags="with_item"
+        alpha="1"
+        image_file="data/scipio-rainbow/player_arm_white.xml"
+        next_rect_animation=""
+        rect_animation="default"
+        z_index="0.59"
+    />
 
     <InheritTransformComponent
       parent_hotspot_tag="right_arm_root"
       only_position="1"
-    ></InheritTransformComponent>  
+    />
 
     <HotspotComponent
-      _tags="hand"
-      sprite_hotspot_name="hand"
-      transform_with_scale="1"
-    ></HotspotComponent>
+          _tags="hand"
+          sprite_hotspot_name="hand"
+          transform_with_scale="1"
+    />
 
   </Entity>
 
