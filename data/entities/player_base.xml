@@ -429,11 +429,11 @@
   </Entity>
   
   <!-- belt -->
-  
-  <HotspotComponent
-    _tags="belt_root"
-    sprite_hotspot_name="belt"
-  ></HotspotComponent>
+
+    <HotspotComponent
+        _tags="belt_root"
+        sprite_hotspot_name="belt"
+    />
   
   <!-- ingestion -->
 
