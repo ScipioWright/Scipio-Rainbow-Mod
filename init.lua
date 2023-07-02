@@ -4,6 +4,10 @@ local function get_player()
 	return EntityGetWithTag("player_unit")[1]
 end
 
+local function get_arm()
+	return EntityGetWithTag("player_arm_r")[1]
+end
+
 local function choose_randoms_from_list(list)
 	-- list needs to have 3 items in it. It can have more, but it shouldn't
 	-- table.remove returns the removed result, similar to pop in python
@@ -11,10 +15,6 @@ local function choose_randoms_from_list(list)
 	local result2 = table.remove(list, Random(1, #list))
 	local result3 = list[1]
 	return result1, result2, result3
-end
-
-local function get_arm()
-	return EntityGetWithTag("player_arm_r")[1]
 end
 
 function OnWorldPostUpdate()
@@ -29,7 +29,7 @@ function OnWorldPostUpdate()
 		local red_arm_comp = EntityGetFirstComponent(arm_id, "SpriteComponent", "arm_red")
 		local green_arm_comp = EntityGetFirstComponent(arm_id, "SpriteComponent", "arm_green")
 		local blue_arm_comp = EntityGetFirstComponent(arm_id, "SpriteComponent", "arm_blue")
-		local r1 = rand(0, 1)
+		local r1 = rand(0, .75)
 		local r2 = rand(0, 1 - r1)
 		local r3 = 1 - r1 - r2
 		local array = {r1, r2, r3}

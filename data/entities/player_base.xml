@@ -199,7 +199,7 @@
     <SpriteComponent
             _tags="character,player_red"
             alpha=".25"
-            image_file="data/scipio-rainbow/player_red.xml"
+            image_file="data/enemies_gfx/player_red.xml"
             next_rect_animation=""
             offset_x="6"
             offset_y="14"
@@ -209,7 +209,7 @@
     <SpriteComponent
             _tags="character,player_green"
             alpha=".25"
-            image_file="data/scipio-rainbow/player_green.xml"
+            image_file="data/enemies_gfx/player_green.xml"
             next_rect_animation=""
             offset_x="6"
             offset_y="14"
@@ -219,7 +219,7 @@
     <SpriteComponent
             _tags="character,player_blue"
             alpha=".25"
-            image_file="data/scipio-rainbow/player_blue.xml"
+            image_file="data/enemies_gfx/player_blue.xml"
             next_rect_animation=""
             offset_x="6"
             offset_y="14"
@@ -229,7 +229,7 @@
     <SpriteComponent
             _tags="character"
             alpha="1"
-            image_file="data/scipio-rainbow/player_white.xml"
+            image_file="data/enemies_gfx/player_white.xml"
             next_rect_animation=""
             offset_x="6"
             offset_y="14"
@@ -260,7 +260,7 @@
     <SpriteComponent
         _tags="with_item,arm_red"
         alpha=".25"
-        image_file="data/scipio-rainbow/player_arm_red.xml"
+        image_file="data/enemies_gfx/player_arm_red.xml"
         next_rect_animation=""
         rect_animation="default"
         z_index="0.58"
@@ -268,7 +268,7 @@
     <SpriteComponent
         _tags="with_item,arm_green"
         alpha=".25"
-        image_file="data/scipio-rainbow/player_arm_green.xml"
+        image_file="data/enemies_gfx/player_arm_green.xml"
         next_rect_animation=""
         rect_animation="default"
         z_index="0.58"
@@ -276,7 +276,7 @@
     <SpriteComponent
         _tags="with_item,arm_blue"
         alpha=".25"
-        image_file="data/scipio-rainbow/player_arm_blue.xml"
+        image_file="data/enemies_gfx/player_arm_blue.xml"
         next_rect_animation=""
         rect_animation="default"
         z_index="0.58"
@@ -284,7 +284,7 @@
     <SpriteComponent
         _tags="with_item"
         alpha="1"
-        image_file="data/scipio-rainbow/player_arm_white.xml"
+        image_file="data/enemies_gfx/player_arm_white.xml"
         next_rect_animation=""
         rect_animation="default"
         z_index="0.59"
